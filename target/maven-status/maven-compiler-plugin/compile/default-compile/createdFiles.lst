@@ -1,0 +1,13 @@
+rest\CorsFilter.class
+com\airhacks\JAXRSConfiguration.class
+service\UserService.class
+dao\UserDao.class
+service\ActivityService.class
+rest\UserRest.class
+rest\ActivityRest.class
+com\airhacks\ping\boundary\PingResource.class
+dao\IUserDao.class
+domain\Activity.class
+domain\User.class
+dao\ActivityDao.class
+dao\IActivityDao.class
