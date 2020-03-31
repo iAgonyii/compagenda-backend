@@ -3,7 +3,9 @@ package service;
 import dao.ActivityDao;
 import dao.IActivityDao;
 import dao.IUserDao;
+import dao.UserDao;
 import domain.Activity;
+import domain.User;
 
 import javax.persistence.Entity;
 import javax.persistence.EntityManager;
@@ -27,9 +29,20 @@ public class ActivityService {
         }
     }
 
-    public List<Activity> getActivities() {
+    public List<Activity> getActivities(long id) {
         EntityManager em = emf.createEntityManager();
         dao = new ActivityDao(em);
-        return dao.getActivities();
+        return dao.getActivities(id);
+    }
+
+    public String editActivity(Activity activity) {
+        EntityManager em = emf.createEntityManager();
+        dao = new ActivityDao(em);
+        if(dao.editActivity(activity)) {
+            return "Successfully edited activity";
+        }
+        else {
+            return "Error while editing activity";
+        }
     }
 }

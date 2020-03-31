@@ -31,11 +31,28 @@ public class ActivityDao implements IActivityDao {
         }
     }
 
-    public List<Activity> getActivities() {
+    public boolean editActivity(Activity activity) {
+        em.getTransaction().begin();
+        try {
+            em.merge(activity);
+            em.getTransaction().commit();
+            return true;
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+            em.getTransaction().rollback();
+            return false;
+        }
+        finally {
+            em.close();
+        }
+    }
+
+    public List<Activity> getActivities(long id) {
         List<Activity> activities = null;
         em.getTransaction().begin();
         try {
-            Query query = em.createQuery("select a from Activity a");
+            Query query = em.createQuery("select a from Activity a where a.userId = :uid").setParameter( "uid", id);
             activities = query.getResultList();
             em.getTransaction().commit();
         }

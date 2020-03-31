@@ -5,7 +5,12 @@ import org.eclipse.persistence.jpa.jpql.parser.DateTime;
 
 import javax.naming.Name;
 import javax.persistence.*;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.DateTimeException;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 @Entity
@@ -15,15 +20,20 @@ public class Activity {
     @Id @GeneratedValue
     private Long id;
     private String category;
-    private String starttime;
-    private String endtime;
-    private Long uid;
+    private LocalDateTime starttime;
+    private LocalDateTime endtime;
+    private Long userId;
 
-    public Activity(String category, String starttime, String endtime, Long uid) {
+    public Activity(String category, LocalDateTime starttime, LocalDateTime endtime, Long userId) {
         this.category = category;
-        this.starttime = starttime;
-        this.endtime = endtime;
-        this.uid = uid;
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
+        String formatStartTime = starttime.format(formatter);
+        String formatEndTime = endtime.format(formatter);
+
+        this.starttime = LocalDateTime.parse(formatStartTime, formatter);
+        this.endtime = LocalDateTime.parse(formatEndTime, formatter);
+        this.userId = userId;
     }
 
     public Activity() {
@@ -46,26 +56,26 @@ public class Activity {
         this.category = category;
     }
 
-    public String getStarttime() {
+    public LocalDateTime getStarttime() {
         return starttime;
     }
 
-    public void setStarttime(String starttime) {
+    public void setStarttime(LocalDateTime starttime) {
         this.starttime = starttime;
     }
 
-    public String getEndtime() {
+    public LocalDateTime getEndtime() {
         return endtime;
     }
 
-    public void setEndtime(String endtime) {
+    public void setEndtime(LocalDateTime endtime) {
         this.endtime = endtime;
     }
-    public Long getUid() {
-        return uid;
+    public Long getUserId() {
+        return userId;
     }
 
-    public void setUid(Long uid) {
-        this.uid = uid;
+    public void setUserId(Long userId) {
+        this.userId = userId;
     }
 }

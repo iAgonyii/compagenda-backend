@@ -1,4 +1,7 @@
 rest\CorsFilter.class
+rest\AuthRest.class
+rest\TokenNeeded.class
+rest\TokenNeededFilter.class
 com\airhacks\JAXRSConfiguration.class
 service\UserService.class
 dao\UserDao.class

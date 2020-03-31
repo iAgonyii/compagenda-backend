@@ -3,10 +3,12 @@ package rest;
 import domain.User;
 import service.UserService;
 
+import javax.ejb.Stateless;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
 
+@Stateless
 @Path("users")
 public class UserRest
 {
@@ -33,14 +35,12 @@ public class UserRest
 
     @GET
     public List<User> getUsers() {
-        /*service = new UserService();*/
         return service.getUsers();
     }
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
-    public String addUser(User user) {
-        /*service = new UserService();*/
-        return service.addUser(user);
+    public void addUser(User user) {
+        service.addUser(user);
     }
 }

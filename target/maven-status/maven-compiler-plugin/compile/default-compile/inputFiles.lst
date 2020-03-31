@@ -1,13 +1,16 @@
+C:\Users\Roy\Documents\Skool\HBO-ICT\S4\FUN4\Project Files\compagenda\src\main\java\rest\AuthRest.java
 C:\Users\Roy\Documents\Skool\HBO-ICT\S4\FUN4\Project Files\compagenda\src\main\java\service\ActivityService.java
 C:\Users\Roy\Documents\Skool\HBO-ICT\S4\FUN4\Project Files\compagenda\src\main\java\dao\IActivityDao.java
 C:\Users\Roy\Documents\Skool\HBO-ICT\S4\FUN4\Project Files\compagenda\src\main\java\domain\User.java
 C:\Users\Roy\Documents\Skool\HBO-ICT\S4\FUN4\Project Files\compagenda\src\main\java\rest\CorsFilter.java
 C:\Users\Roy\Documents\Skool\HBO-ICT\S4\FUN4\Project Files\compagenda\src\main\java\rest\ActivityRest.java
 C:\Users\Roy\Documents\Skool\HBO-ICT\S4\FUN4\Project Files\compagenda\src\main\java\com\airhacks\ping\boundary\PingResource.java
+C:\Users\Roy\Documents\Skool\HBO-ICT\S4\FUN4\Project Files\compagenda\src\main\java\rest\TokenNeededFilter.java
 C:\Users\Roy\Documents\Skool\HBO-ICT\S4\FUN4\Project Files\compagenda\src\main\java\dao\ActivityDao.java
 C:\Users\Roy\Documents\Skool\HBO-ICT\S4\FUN4\Project Files\compagenda\src\main\java\dao\UserDao.java
 C:\Users\Roy\Documents\Skool\HBO-ICT\S4\FUN4\Project Files\compagenda\src\main\java\dao\IUserDao.java
 C:\Users\Roy\Documents\Skool\HBO-ICT\S4\FUN4\Project Files\compagenda\src\main\java\rest\UserRest.java
 C:\Users\Roy\Documents\Skool\HBO-ICT\S4\FUN4\Project Files\compagenda\src\main\java\service\UserService.java
+C:\Users\Roy\Documents\Skool\HBO-ICT\S4\FUN4\Project Files\compagenda\src\main\java\rest\TokenNeeded.java
 C:\Users\Roy\Documents\Skool\HBO-ICT\S4\FUN4\Project Files\compagenda\src\main\java\com\airhacks\JAXRSConfiguration.java
 C:\Users\Roy\Documents\Skool\HBO-ICT\S4\FUN4\Project Files\compagenda\src\main\java\domain\Activity.java

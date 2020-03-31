@@ -6,5 +6,6 @@ import java.util.List;
 
 public interface IActivityDao {
     boolean addActivity(Activity activity);
-    List<Activity> getActivities();
+    List<Activity> getActivities(long id);
+    boolean editActivity(Activity activity);
 }
