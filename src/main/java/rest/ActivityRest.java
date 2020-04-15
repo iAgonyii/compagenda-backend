@@ -15,17 +15,20 @@ public class ActivityRest {
     private ActivityService service = new ActivityService();
     public ActivityRest() { }
 
+    @TokenNeeded
     @POST
     public void addActivity(Activity activity) {
         service.addActivity(activity);
     }
 
+    @TokenNeeded
     @GET
     public List<Activity> getActivities(@QueryParam("userId") long id) {
         return service.getActivities(id);
     }
 
     @Path("/{id}")
+    @TokenNeeded
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     public void editActivity(@PathParam("id") long id, Activity activity) {

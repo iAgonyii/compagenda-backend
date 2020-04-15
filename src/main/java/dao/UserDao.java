@@ -58,7 +58,7 @@ public class UserDao implements IUserDao {
         return user;
     }
 
-    public boolean addUser(User u) {
+    public boolean register(User u) {
         em.getTransaction().begin();
         try {
             em.persist(u);
@@ -89,6 +89,66 @@ public class UserDao implements IUserDao {
         }
         finally {
             em.close();
+        }
+    }
+
+    public long getIdForName(String username) {
+        long id = 0;
+        em.getTransaction().begin();
+        try
+        {
+            Query query = em.createQuery("select u.id from User u where u.username = :username").setParameter("username", username);
+            id = (long) query.getSingleResult();
+            em.getTransaction().commit();
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+            em.getTransaction().rollback();
+        }
+        finally {
+            em.close();
+        }
+        return id;
+    }
+
+    public String getPassword(Long id) {
+        String hashpw = "";
+        em.getTransaction().begin();
+        try
+        {
+            Query query = em.createQuery("select u.password from User u where u.id = :uid").setParameter("uid", id);
+            hashpw = (String) query.getSingleResult();
+            em.getTransaction().commit();
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+            em.getTransaction().rollback();
+        }
+        finally {
+            em.close();
+        }
+        return hashpw;
+    }
+
+    public boolean CheckIfAlreadyExists(User user) {
+        em.getTransaction().begin();
+        int u = 0;
+        try
+        {
+            Query query = em.createQuery("select count(u.username) from User u where u.username = :username").setParameter("username", user.getUsername());
+            u = (int) query.getSingleResult();
+            em.getTransaction().commit();
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+            em.getTransaction().rollback();
+        }
+        finally {
+            em.close();
+            return u == 1;
         }
     }
 }

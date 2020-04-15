@@ -2,40 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98da371a-7dba-4feb-b5b9-c3e3d1839ab8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/ActivityDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/ActivityDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/IActivityDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/IActivityDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/IUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/IUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rest/ActivityRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest/ActivityRest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rest/AuthRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest/AuthRest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rest/CorsFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest/CorsFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rest/TokenNeededFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest/TokenNeededFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rest/UserRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest/UserRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/ActivityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ActivityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/compagenda.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/ActivityDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/ActivityDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/IActivityDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/IActivityDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/domain/Activity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/domain/Activity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/IUserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/IUserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/domain/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/rest/ActivityRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rest/ActivityRest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rest/AuthRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rest/AuthRest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rest/CorsFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rest/CorsFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rest/TokenNeededFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rest/TokenNeededFilter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/rest/UserRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rest/UserRest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/ActivityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/ActivityService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/compagenda.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/compagenda.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/dao/ActivityDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/dao/ActivityDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/dao/IActivityDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/dao/IActivityDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/domain/Activity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/domain/Activity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/dao/IUserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/dao/IUserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/domain/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/rest/ActivityRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/rest/ActivityRest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/rest/AuthRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/rest/AuthRest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/rest/CorsFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/rest/CorsFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/rest/TokenNeededFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/rest/TokenNeededFilter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/rest/UserRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/rest/UserRest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/service/ActivityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/service/ActivityService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/DatabaseCleaner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/UserTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,13 +74,17 @@
       <list>
         <option value="FxmlFile" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JavaeeView">
+    <option name="frameworksView" value="false" />
+    <option name="showModules" value="false" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -110,10 +111,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../compagendafront" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.customizations" />
   </component>
   <component name="RecentsManager">
@@ -124,7 +125,17 @@
       <recent name="rest" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserTests">
+  <component name="RunManager" selected="JUnit.AuthTests.a_GetToken">
+    <configuration name="AuthTests.a_GetToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="compagenda" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AuthTests" />
+      <option name="METHOD_NAME" value="a_GetToken" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="compagenda" />
       <option name="PACKAGE_NAME" value="" />
@@ -146,10 +157,38 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AuthTests.a_GetToken" />
         <item itemvalue="JUnit.UserTests" />
         <item itemvalue="JUnit.UserTests.b_getUsers" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:pr0SedQUmC@remotemysql.com" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:pr0SedQUmC@remotemysql.com" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@19314712" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:pr0SedQUmC@remotemysql.com" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@4fe2222e" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -175,6 +214,11 @@
       <workItem from="1584487853380" duration="5994000" />
       <workItem from="1584526035378" duration="3432000" />
       <workItem from="1585098615016" duration="18274000" />
+      <workItem from="1585644928031" duration="2645000" />
+      <workItem from="1586306839073" duration="5286000" />
+      <workItem from="1586316462147" duration="548000" />
+      <workItem from="1586765796133" duration="14000" />
+      <workItem from="1586902961985" duration="18320000" />
     </task>
     <servers />
   </component>
@@ -190,14 +234,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="293" y="82" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1584359772233" />
-    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1583920415943">
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1585647297067">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1583920415943" />
-    <state x="574" y="97" key="#com.intellij.ide.util.MemberChooser" timestamp="1585126778984">
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1585647297067" />
+    <state x="574" y="97" key="#com.intellij.ide.util.MemberChooser" timestamp="1586916871019">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="97" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1585126778984" />
+    <state x="574" y="97" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586916871019" />
     <state x="566" y="273" width="403" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1584526134872">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -206,26 +250,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="400" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1583920802464" />
-    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1584360410479">
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1586902974100">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1584360410479" />
-    <state width="1493" height="202" key="GridCell.Tab.0.bottom" timestamp="1584361589200">
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586902974100" />
+    <state width="1024" height="203" key="GridCell.Tab.0.bottom" timestamp="1586922420024">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="202" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584361589200" />
-    <state width="1493" height="202" key="GridCell.Tab.0.center" timestamp="1584361589200">
+    <state width="1024" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586922420024" />
+    <state width="1024" height="203" key="GridCell.Tab.0.center" timestamp="1586922420024">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="202" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1584361589200" />
-    <state width="1493" height="202" key="GridCell.Tab.0.left" timestamp="1584361589199">
+    <state width="1024" height="203" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586922420024" />
+    <state width="1024" height="203" key="GridCell.Tab.0.left" timestamp="1586922420024">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="202" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1584361589199" />
-    <state width="1493" height="202" key="GridCell.Tab.0.right" timestamp="1584361589200">
+    <state width="1024" height="203" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586922420024" />
+    <state width="1024" height="203" key="GridCell.Tab.0.right" timestamp="1586922420024">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="202" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1584361589200" />
+    <state width="1024" height="203" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586922420024" />
     <state width="1493" height="252" key="GridCell.Tab.1.bottom" timestamp="1583921729764">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -246,22 +290,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="208" height="457" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1583245663631" />
-    <state x="299" y="68" key="Maven.ArtifactSearchDialog" timestamp="1585128311658">
+    <state x="299" y="68" key="Maven.ArtifactSearchDialog" timestamp="1586916265296">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="299" y="68" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1585128311658" />
-    <state x="266" y="112" key="SettingsEditor" timestamp="1583314699588">
+    <state x="299" y="68" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1586916265296" />
+    <state x="266" y="0" key="SettingsEditor" timestamp="1585645049479">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="266" y="112" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1583314699588" />
-    <state x="660" y="293" width="322" height="237" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1585116619550">
+    <state x="266" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585645049479" />
+    <state x="660" y="293" width="322" height="237" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1586922419464">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="660" y="293" width="322" height="237" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.824@0.0.1536.824" timestamp="1585116619550" />
-    <state x="208" y="249" key="com.intellij.ide.util.TipDialog" timestamp="1584356324513">
+    <state x="660" y="293" width="322" height="237" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.824@0.0.1536.824" timestamp="1586922419464" />
+    <state x="485" y="55" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1586922565014">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="208" y="249" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1584356324513" />
+    <state x="485" y="55" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1586922565014" />
+    <state x="208" y="249" key="com.intellij.ide.util.TipDialog" timestamp="1586765795541">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="208" y="249" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1586765795541" />
     <state x="499" y="179" key="extract.method.dialog" timestamp="1583754573613">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

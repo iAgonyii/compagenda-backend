@@ -38,9 +38,9 @@ public class UserRest
         return service.getUsers();
     }
 
-    @POST
-    @Consumes(MediaType.APPLICATION_JSON)
-    public void addUser(User user) {
-        service.addUser(user);
-    }
+//    @POST
+//    @Consumes(MediaType.APPLICATION_JSON)
+//    public void addUser(User user) {
+//        service.addUser(user);
+//    }
 }
