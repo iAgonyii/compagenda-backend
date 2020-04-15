@@ -3,34 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="98da371a-7dba-4feb-b5b9-c3e3d1839ab8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/IUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/IUserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rest/ActivityRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest/ActivityRest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rest/AuthRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest/AuthRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rest/CorsFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest/CorsFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rest/TokenNeededFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest/TokenNeededFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rest/UserRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest/UserRest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/IUserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/IUserDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/domain/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rest/ActivityRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rest/ActivityRest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/rest/AuthRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rest/AuthRest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rest/CorsFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rest/CorsFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rest/TokenNeededFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rest/TokenNeededFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rest/UserRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rest/UserRest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/compagenda.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/compagenda.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/dao/IUserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/dao/IUserDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/domain/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/rest/ActivityRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/rest/ActivityRest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/rest/AuthRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/rest/AuthRest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/rest/CorsFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/rest/CorsFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/rest/TokenNeededFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/rest/TokenNeededFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/rest/UserRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/rest/UserRest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
@@ -218,7 +200,7 @@
       <workItem from="1586306839073" duration="5286000" />
       <workItem from="1586316462147" duration="548000" />
       <workItem from="1586765796133" duration="14000" />
-      <workItem from="1586902961985" duration="18320000" />
+      <workItem from="1586902961985" duration="25790000" />
     </task>
     <servers />
   </component>
@@ -250,10 +232,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="400" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1583920802464" />
-    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1586902974100">
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1586923233529">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586902974100" />
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586923233529" />
     <state width="1024" height="203" key="GridCell.Tab.0.bottom" timestamp="1586922420024">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

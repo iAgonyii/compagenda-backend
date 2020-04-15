@@ -44,17 +44,22 @@ public class AuthRest {
             return Response.ok().header(AUTHORIZATION, "BEARER " + issueToken(id)).build();
         }
         else {
-            return Response.status(Response.Status.UNAUTHORIZED).build();
+            return Response.ok().status(Response.Status.UNAUTHORIZED).build();
         }
     }
 
     @POST
     @Path("/register")
     @Consumes(APPLICATION_FORM_URLENCODED)
-    public String register(@FormParam("username") String username, @FormParam("email") String email, @FormParam("password") String password) {
+    public Response register(@FormParam("username") String username, @FormParam("email") String email, @FormParam("password") String password) {
         User user = new User(username, email, password);
         service = new UserService();
-        return service.register(user);
+        if(service.register(user)) {
+            return Response.status(201).build();
+        }
+        else {
+            return Response.status(409).build();
+        }
     }
 
 

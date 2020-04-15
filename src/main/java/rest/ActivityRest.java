@@ -35,4 +35,6 @@ public class ActivityRest {
         activity.setId(id);
         service.editActivity(activity);
     }
+
+    // Delete activity
 }

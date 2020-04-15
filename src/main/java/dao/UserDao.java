@@ -134,11 +134,11 @@ public class UserDao implements IUserDao {
 
     public boolean CheckIfAlreadyExists(User user) {
         em.getTransaction().begin();
-        int u = 0;
+        long u = 0;
         try
         {
             Query query = em.createQuery("select count(u.username) from User u where u.username = :username").setParameter("username", user.getUsername());
-            u = (int) query.getSingleResult();
+            u = (long) query.getSingleResult();
             em.getTransaction().commit();
         }
         catch (Exception e)

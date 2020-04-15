@@ -73,16 +73,16 @@ public class UserService {
         }
     }
 
-    public String register(User user) {
+    public boolean register(User user) {
         if(CheckIfAlreadyExists(user)) {
-            return "This user already exists";
+            return false;
         }
         else {
             EntityManager em = emf.createEntityManager();
             dao = new UserDao(em);
             user.setPassword(BCrypt.hashpw(user.getPassword(), BCrypt.gensalt()));
             dao.register(user);
-            return "Succesfully registered user";
+            return true;
         }
     }
 
