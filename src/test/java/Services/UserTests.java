@@ -1,16 +1,12 @@
-import dao.UserDao;
-import domain.User;
+package Services;
+
 import org.junit.BeforeClass;
 import org.junit.FixMethodOrder;
-import org.junit.Test;
 import org.junit.runners.MethodSorters;
 import service.UserService;
 
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertTrue;

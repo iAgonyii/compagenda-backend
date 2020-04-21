@@ -20,6 +20,7 @@ import javax.xml.bind.DatatypeConverter;
 import io.jsonwebtoken.impl.TextCodec;
 import io.jsonwebtoken.security.Keys;
 import org.mindrot.jbcrypt.BCrypt;
+import service.AuthService;
 import service.UserService;
 
 
@@ -31,16 +32,16 @@ import static javax.ws.rs.core.MediaType.APPLICATION_FORM_URLENCODED;
 @Path("auth")
 public class AuthRest {
 
-    UserService service;
+    private AuthService service;
+    private UserService userService;
 
     @POST
     @Path("/login")
     @Consumes(APPLICATION_FORM_URLENCODED)
     @Produces(MediaType.APPLICATION_JSON)
     public Response auth(@FormParam("username") String username, @FormParam("password") String password) {
-        service = new UserService();
         if(service.login(username, password)) {
-            long id = service.getIdForName(username);
+            long id = userService.getIdForName(username);
             return Response.ok().header(AUTHORIZATION, "BEARER " + issueToken(id)).build();
         }
         else {
@@ -53,7 +54,6 @@ public class AuthRest {
     @Consumes(APPLICATION_FORM_URLENCODED)
     public Response register(@FormParam("username") String username, @FormParam("email") String email, @FormParam("password") String password) {
         User user = new User(username, email, password);
-        service = new UserService();
         if(service.register(user)) {
             return Response.status(201).build();
         }

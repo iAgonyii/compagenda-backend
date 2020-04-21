@@ -58,23 +58,6 @@ public class UserDao implements IUserDao {
         return user;
     }
 
-    public boolean register(User u) {
-        em.getTransaction().begin();
-        try {
-            em.persist(u);
-            em.getTransaction().commit();
-            return true;
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-            em.getTransaction().rollback();
-            return false;
-        }
-        finally {
-            em.close();
-        }
-    }
-
     public boolean editUser(User u) {
         em.getTransaction().begin();
         try {
@@ -112,44 +95,8 @@ public class UserDao implements IUserDao {
         return id;
     }
 
-    public String getPassword(Long id) {
-        String hashpw = "";
-        em.getTransaction().begin();
-        try
-        {
-            Query query = em.createQuery("select u.password from User u where u.id = :uid").setParameter("uid", id);
-            hashpw = (String) query.getSingleResult();
-            em.getTransaction().commit();
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-            em.getTransaction().rollback();
-        }
-        finally {
-            em.close();
-        }
-        return hashpw;
-    }
 
-    public boolean CheckIfAlreadyExists(User user) {
-        em.getTransaction().begin();
-        long u = 0;
-        try
-        {
-            Query query = em.createQuery("select count(u.username) from User u where u.username = :username").setParameter("username", user.getUsername());
-            u = (long) query.getSingleResult();
-            em.getTransaction().commit();
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-            em.getTransaction().rollback();
-        }
-        finally {
-            em.close();
-            return u == 1;
-        }
-    }
+
+
 }
 
