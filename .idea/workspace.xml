@@ -3,17 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="98da371a-7dba-4feb-b5b9-c3e3d1839ab8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rest/ActivityRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest/ActivityRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rest/AuthRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest/AuthRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rest/AuthRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rest/AuthRest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/compagenda.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/compagenda.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/rest/AuthRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/rest/AuthRest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/compagenda/WEB-INF/classes/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -200,7 +191,9 @@
       <workItem from="1586306839073" duration="5286000" />
       <workItem from="1586316462147" duration="548000" />
       <workItem from="1586765796133" duration="14000" />
-      <workItem from="1586902961985" duration="25790000" />
+      <workItem from="1586902961985" duration="25791000" />
+      <workItem from="1587369826269" duration="37000" />
+      <workItem from="1587458373848" duration="829000" />
     </task>
     <servers />
   </component>
@@ -228,14 +221,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="566" y="273" width="403" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1584526134872" />
+    <state x="308" y="8" key="CommitChangelistDialog2" timestamp="1587461520632">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="308" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1587461520632" />
     <state width="400" height="466" key="DebuggerActiveHint" timestamp="1583920802464">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="400" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1583920802464" />
-    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1586923233529">
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1587458377647">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586923233529" />
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1587458377647" />
     <state width="1024" height="203" key="GridCell.Tab.0.bottom" timestamp="1586922420024">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -280,6 +277,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="266" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585645049479" />
+    <state x="361" y="135" key="Vcs.Push.Dialog.v2" timestamp="1587461531147">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="135" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1587461531147" />
     <state x="660" y="293" width="322" height="237" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1586922419464">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -288,10 +289,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="485" y="55" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1586922565014" />
-    <state x="208" y="249" key="com.intellij.ide.util.TipDialog" timestamp="1586765795541">
+    <state x="208" y="249" key="com.intellij.ide.util.TipDialog" timestamp="1587369850642">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="208" y="249" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1586765795541" />
+    <state x="208" y="249" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1587369850642" />
     <state x="499" y="179" key="extract.method.dialog" timestamp="1583754573613">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
