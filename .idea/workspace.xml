@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="98da371a-7dba-4feb-b5b9-c3e3d1839ab8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UserTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/compagenda.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/compagenda.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,12 +191,24 @@
       <workItem from="1586765796133" duration="14000" />
       <workItem from="1586902961985" duration="25791000" />
       <workItem from="1587369826269" duration="37000" />
-      <workItem from="1587458373848" duration="829000" />
+      <workItem from="1587458373848" duration="1967000" />
     </task>
+    <task id="LOCAL-00001" summary="commented compile errors for now">
+      <created>1587461526115</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587461526116</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commented compile errors for now" />
+    <option name="LAST_COMMIT_MESSAGE" value="commented compile errors for now" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="72" key="#Assign_Data_Sources" timestamp="1583757259488">
