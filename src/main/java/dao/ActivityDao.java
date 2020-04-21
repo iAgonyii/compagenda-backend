@@ -66,4 +66,21 @@ public class ActivityDao implements IActivityDao {
         return activities;
     }
 
+    public boolean deleteActivity(Activity activity) {
+        em.getTransaction().begin();
+        try {
+            em.remove(activity);
+            em.getTransaction().commit();
+            return true;
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+            em.getTransaction().rollback();
+            return false;
+        }
+        finally {
+            em.close();
+        }
+    }
+
 }

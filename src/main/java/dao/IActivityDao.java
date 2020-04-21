@@ -8,4 +8,5 @@ public interface IActivityDao {
     boolean addActivity(Activity activity);
     List<Activity> getActivities(long id);
     boolean editActivity(Activity activity);
+    boolean deleteActivity(Activity activity);
 }

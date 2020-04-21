@@ -36,5 +36,11 @@ public class ActivityRest {
         service.editActivity(activity);
     }
 
-    // Delete activity
+    @TokenNeeded
+    @DELETE
+    @Consumes(MediaType.APPLICATION_JSON)
+    public void deleteActivity(Activity activity) {
+        service.deleteActivity(activity);
+    }
+
 }

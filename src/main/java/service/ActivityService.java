@@ -45,4 +45,10 @@ public class ActivityService {
             return "Error while editing activity";
         }
     }
+
+    public void deleteActivity(Activity activity) {
+        EntityManager em = emf.createEntityManager();
+        dao = new ActivityDao(em);
+        dao.deleteActivity(activity);
+    }
 }
