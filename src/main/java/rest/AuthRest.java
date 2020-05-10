@@ -10,7 +10,7 @@ import java.time.Instant;
 import java.util.Date;
 import javax.crypto.spec.SecretKeySpec;
 import javax.ejb.Stateless;
-import javax.servlet.http.HttpServletResponse;
+import javax.inject.Inject;
 import javax.ws.rs.*;
 import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.MediaType;
@@ -31,21 +31,24 @@ import static javax.ws.rs.core.MediaType.APPLICATION_FORM_URLENCODED;
 @Stateless
 @Path("auth")
 public class AuthRest {
-
+    @Inject
     private AuthService service;
+    @Inject
     private UserService userService;
+
+    public AuthRest() { }
 
     @POST
     @Path("/login")
     @Consumes(APPLICATION_FORM_URLENCODED)
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response auth(@FormParam("username") String username, @FormParam("password") String password) {
+    public Response login(@FormParam("username") String username, @FormParam("password") String password) {
         if(service.login(username, password)) {
             long id = userService.getIdForName(username);
-            return Response.ok().header(AUTHORIZATION, "BEARER " + issueToken(id)).build();
+            //return Response.ok()
+            return Response.status(200).header(AUTHORIZATION, "BEARER " + issueToken(id)).build();
         }
         else {
-            return Response.ok().status(Response.Status.UNAUTHORIZED).build();
+            return Response.status(401).build();
         }
     }
 

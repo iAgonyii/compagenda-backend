@@ -7,20 +7,24 @@ import domain.Team;
 import domain.TeamOwner;
 import domain.User;
 
+import javax.ejb.Stateless;
+import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import java.util.ArrayList;
 import java.util.List;
 
+@Stateless
 public class TeamService {
     private final EntityManagerFactory emf = Persistence.createEntityManagerFactory("compagendaPU");
     private ITeamDao dao;
+
+    @Inject
     private UserService userService;
 
     public boolean createTeam(String name, long userId) {
         List<User> members = new ArrayList();
-        userService = new UserService();
         User owner = userService.getUser(userId);
 
         members.add(owner);

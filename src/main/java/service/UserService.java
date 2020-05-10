@@ -5,11 +5,13 @@ import dao.UserDao;
 import domain.User;
 import org.mindrot.jbcrypt.BCrypt;
 
+import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import java.util.List;
 
+@Stateless
 public class UserService {
     private final EntityManagerFactory emf = Persistence.createEntityManagerFactory("compagendaPU");
     private IUserDao dao;
@@ -30,7 +32,7 @@ public class UserService {
         EntityManager em = emf.createEntityManager();
         dao = new UserDao(em);
         if(dao.editUser(user)) {
-            return "Successfully edited user " + user.getEmail();
+            return "Successfully edited user " + user.getUsername();
         }
         else {
             return "Error while editing user";

@@ -1,10 +1,10 @@
 package rest;
 
 import domain.Activity;
-import domain.User;
 import service.ActivityService;
 
 import javax.ejb.Stateless;
+import javax.inject.Inject;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
@@ -12,11 +12,15 @@ import java.util.List;
 @Stateless
 @Path("activity")
 public class ActivityRest {
-    private ActivityService service = new ActivityService();
+
+    @Inject
+    private ActivityService service;
+
     public ActivityRest() { }
 
     @TokenNeeded
     @POST
+    @Consumes(MediaType.APPLICATION_JSON)
     public void addActivity(Activity activity) {
         service.addActivity(activity);
     }

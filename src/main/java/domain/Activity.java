@@ -27,12 +27,12 @@ public class Activity {
     public Activity(String category, LocalDateTime starttime, LocalDateTime endtime, Long userId) {
         this.category = category;
 
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
         String formatStartTime = starttime.format(formatter);
         String formatEndTime = endtime.format(formatter);
 
-        this.starttime = LocalDateTime.parse(formatStartTime, formatter);
-        this.endtime = LocalDateTime.parse(formatEndTime, formatter);
+        setStarttime(LocalDateTime.parse(formatStartTime, formatter));
+        setEndtime(LocalDateTime.parse(formatEndTime, formatter));
         this.userId = userId;
     }
 

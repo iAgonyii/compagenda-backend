@@ -7,26 +7,23 @@ import dao.UserDao;
 import domain.Activity;
 import domain.User;
 
+import javax.ejb.Stateless;
 import javax.persistence.Entity;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import java.util.List;
 
+@Stateless
 public class ActivityService {
 
     private final EntityManagerFactory emf = Persistence.createEntityManagerFactory("compagendaPU");
     private IActivityDao dao;
 
-    public String addActivity(Activity activity) {
+    public boolean addActivity(Activity activity) {
         EntityManager em = emf.createEntityManager();
         dao = new ActivityDao(em);
-        if(dao.addActivity(activity)) {
-            return "Added acitivity";
-        }
-        else {
-            return "Failed to add activity";
-        }
+        return (dao.addActivity(activity));
     }
 
     public List<Activity> getActivities(long id) {
@@ -46,9 +43,9 @@ public class ActivityService {
         }
     }
 
-    public void deleteActivity(Activity activity) {
+    public boolean deleteActivity(Activity activity) {
         EntityManager em = emf.createEntityManager();
         dao = new ActivityDao(em);
-        dao.deleteActivity(activity);
+        return dao.deleteActivity(activity);
     }
 }

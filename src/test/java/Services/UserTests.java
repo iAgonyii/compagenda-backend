@@ -1,12 +1,16 @@
 package Services;
 
+import domain.User;
 import org.junit.BeforeClass;
 import org.junit.FixMethodOrder;
+import org.junit.Test;
 import org.junit.runners.MethodSorters;
 import service.UserService;
 
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+
+import java.util.List;
 
 import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertTrue;
@@ -21,41 +25,59 @@ public class UserTests {
 
     @BeforeClass
     public static void cleanUsersDB() {
-        DatabaseCleaner cleaner = new DatabaseCleaner(emf.createEntityManager());
-        cleaner.clean("User");
+//        DatabaseCleaner cleaner = new DatabaseCleaner(emf.createEntityManager());
+//        cleaner.clean("User");
+        UserService service = new UserService();
+        User user = service.getUser(2001);
+        user.setEmail("to@bedone.com");
+        service.editUser(user);
     }
 
-//    @Test
-//    public void a_addUsers() {
-//        User one = new User("RoyTeneij", "royteneij@Hotmail.nl");
-//        User two = new User("Mythic Rimic", "rimic@fncs.com");
-//        User three = new User("SodjokFNBR", "sodjok@lexa.nl");
-//
-//        boolean added;
-//        try {
-//            service.addUser(one);
-//            service.addUser(two);
-//            service.addUser(three);
-//            added = true;
-//        }
-//        catch(Exception e) {
-//            e.printStackTrace();
-//            added = false;
-//        }
-//
-//        assertTrue(added);
-//    }
-//
-//    @Test
-//    public void b_getUsers() {
-//        List<User> expected = new ArrayList<User>();
-//        expected.add(new User("RoyTeneij", "royteneij@Hotmail.nl"));
-//        expected.add(new User("Mythic Rimic", "rimic@fncs.com"));
-//        expected.add(new User("SodjokFNBR", "sodjok@lexa.nl"));
-//        List<User> users = service.getUsers();
-//        for(int i = 0; i < expected.size(); i++) {
-//            assertEquals(expected.get(i).getUsername(), users.get(i).getUsername());
-//            assertEquals(expected.get(i).getEmail(), users.get(i).getEmail());
-//        }
-//    }
+    @Test
+    public void a_getUsers() {
+        boolean done;
+        try {
+            List<User> users = service.getUsers();
+            done = true;
+        }
+        catch(Exception e) {
+            done = false;
+        }
+        assertTrue(done);
+    }
+
+    @Test
+    public void b_getSpecificUser() {
+        String expectedName = "royteneij";
+        User user = service.getUser(2001);
+
+        assertEquals(expectedName, user.getUsername());
+    }
+
+    @Test
+    public void c_editUserDetails() {
+        String expectedEmail = "roy@roy.com";
+        User user = service.getUser(2001);
+        user.setEmail("roy@roy.com");
+
+        service.editUser(user);
+        User edited = service.getUser(2001);
+
+        assertEquals(expectedEmail, edited.getEmail());
+    }
+
+    @Test
+    public void d_getIdForName() {
+        long expectedId = 2001;
+        long actual = service.getIdForName("royteneij");
+
+        assertEquals(expectedId, actual);
+    }
+
+    @Test
+    public void e_getIdforNameNotExist() {
+        assertEquals(0, service.getIdForName("soakdoksaokasdkodskos"));
+    }
+
+
 }

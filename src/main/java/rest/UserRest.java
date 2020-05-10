@@ -4,6 +4,7 @@ import domain.User;
 import service.UserService;
 
 import javax.ejb.Stateless;
+import javax.inject.Inject;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
@@ -12,7 +13,8 @@ import java.util.List;
 @Path("users")
 public class UserRest
 {
-    private UserService service = new UserService();
+    @Inject
+    private UserService service;
 
     public UserRest() {
 

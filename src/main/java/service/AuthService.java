@@ -7,13 +7,18 @@ import dao.UserDao;
 import domain.User;
 import org.mindrot.jbcrypt.BCrypt;
 
+import javax.ejb.Stateless;
+import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
+@Stateless
 public class AuthService {
     private final EntityManagerFactory emf = Persistence.createEntityManagerFactory("compagendaPU");
     private IAuthDao dao;
+
+    @Inject
     private UserService userService;
 
     public boolean login(String username, String password) {

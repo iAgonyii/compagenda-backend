@@ -23,4 +23,19 @@ public class DatabaseCleaner {
             em.close();
         }
     }
+
+    public void deleteUser(String username) {
+        em.getTransaction().begin();
+        try {
+            em.createQuery("DELETE from User u WHERE u.username = :username").setParameter("username", username).executeUpdate();
+            em.getTransaction().commit();
+        }
+        catch(Exception e) {
+            e.printStackTrace();
+            em.getTransaction().rollback();
+        }
+        finally {
+            em.close();
+        }
+    }
 }

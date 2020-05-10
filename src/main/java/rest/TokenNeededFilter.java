@@ -1,6 +1,5 @@
 package rest;
 
-import com.sun.org.apache.bcel.internal.ExceptionConst;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -38,7 +37,7 @@ public class TokenNeededFilter implements ContainerRequestFilter {
         }
     }
 
-    private Claims validateToken(String token) throws Exception {
+    public Claims validateToken(String token) throws Exception {
         try
         {
             Claims claims = Jwts.parser()
